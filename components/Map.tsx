@@ -12,7 +12,8 @@ export default function Map({ lots }: { lots: any[] }) {
 
     const apiKey = process.env.NEXT_PUBLIC_GOONG_API_KEY
 
-    import('@goongmaps/goong-js').then((goongjs: any) => {
+    // @ts-ignore
+import('@goongmaps/goong-js').then((goongjs: any) => {
       if (mapInstanceRef.current) return
 
       const G = goongjs.default || goongjs
