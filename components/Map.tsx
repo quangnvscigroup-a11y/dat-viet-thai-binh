@@ -21,4 +21,4 @@ export default function Map({ lots }: { lots: any[] }) {
 
       const map = new G.Map({
         container: mapRef.current,
-        style: `https://tiles.goong.io/assets/goo
+        style: 'https://tiles.goong.io/assets/goong_map_web.json?api_key=' + apiKey,
