@@ -17,7 +17,7 @@ export default function Map({ lots }: { lots: any[] }) {
     import('@goongmaps/goong-js').then((goongjs) => {
       if (mapInstanceRef.current) return
 
-      goongjs.accessToken = apiKey
+    
 
       const map = new goongjs.Map({
         container: mapRef.current,
