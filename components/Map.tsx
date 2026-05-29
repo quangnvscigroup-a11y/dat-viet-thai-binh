@@ -14,11 +14,11 @@ export default function Map({ lots }: { lots: any[] }) {
       if (mapInstanceRef.current) return
       if (mapRef.current._leaflet_id) return
 
-      const map = L.map(mapRef.current, { preferCanvas: true }).setView([20.537, 106.337], 15)
+      const map = L.map(mapRef.current, { preferCanvas: true, maxZoom: 18 }).setView([20.537, 106.337], 15)
       mapInstanceRef.current = map
 
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        attribution: '© Esri', maxZoom: 20, maxNativeZoom: 19
+        attribution: '© Esri', maxZoom: 18, maxNativeZoom: 18
       }).addTo(map)
 
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
