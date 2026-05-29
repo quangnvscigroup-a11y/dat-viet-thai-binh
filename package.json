@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@goongmaps/goong-js": "^1.0.9",
     "@supabase/supabase-js": "^2.106.2",
     "leaflet": "^1.9.4",
     "next": "16.2.6",
